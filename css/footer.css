@@ -1,0 +1,30 @@
+.footer-center{
+    margin: 2rem;
+}
+.footer-center .middle-footer{
+    display: grid;
+    justify-content:center;
+    grid-template-columns: auto auto auto;
+    margin: 3rem;
+}
+.footer-bottom{
+    text-align: center;
+    font-size: 0.8rem;
+    
+}
+.footer-top{
+    margin: 1rem;
+}
+.footer_email_phone{
+    font-size: 0.8rem;
+}
+.footer_email_phone a{
+    font-size: 12px;
+    
+
+}
+.footer_address{
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 1rem;
+}

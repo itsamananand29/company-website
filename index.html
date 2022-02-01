@@ -1,0 +1,555 @@
+<!-- Created by Aman Anand -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Experience Expets | AEM Counsulting | Argil DX </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/mobileMenu.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/msForm.css">
+</head>
+<body>
+    <div id="backdrop" onclick="closeNav()">
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <br>
+            <a href="#" onclick="closeNav()">About</a>
+            <a href="#services" onclick="closeNav()">Services</a>
+            <a href="#clients" onclick="closeNav()">Clients</a>
+            <a href="#blogs" onclick="closeNav()">Blog   </a>
+          </div>
+    </div>
+    
+    <header>
+        
+        <nav class="main-nav">
+            <div class="main-nav_logo">
+                <a href="#" class="logo_link">
+                    <img id = 'logo-pic' src="images/logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="spacer">
+
+            </div>
+            <ul class="main-nav_items">
+                <li class="navigation-item">
+                    <a href='#'>ABOUT US</a>
+                </li>
+                <li class="navigation-item">
+                    <a href='#services'>SERVICES</a>
+                </li>
+                <li class="navigation-item">
+                    <a href='#blogs'>BLOG</a>
+                </li>
+            </ul>
+            <div class="hamburger-menu" onclick="openNav()">
+                <a href="#">
+                    <div id="hamburger-menu_list1"></div>
+                    <div id="hamburger-menu_list2"></div>
+                    <div id="hamburger-menu_list3"></div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="section-1">
+            <div class="image-section">
+                <img class="image-container" src="images/rectangle11.png" alt="">
+            </div>
+            <div class="content-section">
+                <br>
+                <h1 class="content-heading">
+                    <strong>
+                        Digital Experience
+                        <br>
+                        Reimagined
+                    </strong>
+                </h1>
+                <p class="content-text">At Argil DX, we help you create digital experiences that delight your customers at every step of their journey. Take advantage of our years of experience and expertise in some of the most popular web technologies.</p>
+                <p class="content-text">Learn more about our digital strategy consulting services.</p>
+                <br>
+                <a href="#contact" class='button'>CONTACT US</a>
+            </div>
+        </div>
+        <div class="section-3" id='services'>
+            <div class="service-section">
+                <h1 class="content-heading"><strong>Services</strong></h1>
+            </div>
+            <div class="section-accordion-container">
+                <button class="accordion">Digital Transformation</button>
+                <div class="panel">
+                    <img class='image-container'src="images/digital-Transformation.png" alt="">
+                    <p class="content-text">Delivering operational requirements through customized digital services.</p>
+                </div>
+                <button class="accordion">Managed Services</button>
+                <div class="panel">
+                    <img class='image-container' src='images/managed-Services624.png' alt="">
+                    <p class="content-text">24/7 IT support and monitoring for disaster recovery and performance optimization.</p>
+                </div>
+                <button class="accordion">Web Content Management</button>
+                <div class="panel">
+                    <img class='image-container' src='images/web-Content-Management-624px-1.png' alt="">
+                    <p class="content-text">Manage your web content and digital assets with our comprehensive CMS solutions.</p>
+                </div>
+                <button class="accordion">Web Appication Development</button>
+                <div class="panel">
+                    <img class='image-container' src='images/web-App624.png' alt="">
+                    <p class="content-text">Next-generation, cross-channel progressive web applications to help you meet evolving customer needs.</p>
+                </div>
+                <button class="accordion">Security Services</button>
+                <div class="panel">
+                    <img class='image-container' src='images/security-Services624.png' alt="">
+                    <p class="content-text">Securing AEM-driven sites for decades with personalized protection.</p>
+                </div>
+                <button class="accordion">Ecommerce Implementation</button>
+                <div class="panel">
+                    <img class='image-container' src='images/ecommerce624.png' alt="">
+                    <p class="content-text">Online commerce solutions that enhance customer experience and improve brand value while reducing operational costs.</p>
+                </div>
+            </div>
+            <div class="section-slideshow-container">
+                <div class="section-1">
+                    <div class="mySlides">
+                        <img class='image-container' src="images/digital-Transformation.png" >
+                    </div>
+                    <div class="mySlides">
+                        <img class='image-container' src="images/managed-Services624.png" >
+                    </div>
+                    <div class="mySlides">
+                        <img class='image-container' src="images/web-Content-Management-624px-1.png" >
+                    </div>
+                    <div class="mySlides">
+                        <img class='image-container' src="images/web-App624.png" >
+                    </div>
+                    <div class="mySlides">
+                        <img class='image-container' src="images/security-Services624.png" >
+                    </div>
+                    <div class="mySlides">
+                        <img class='image-container' src="images/ecommerce624.png" >
+                    </div>
+                    <div class="caption-container">
+                        <h3 class="content-heading">
+                            <strong id ='caption-title'></strong>
+                        </h3>
+                        <p id="caption"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                      <img class="demo cursor" src="images/digital-Transformation.png" style="width:100%" onmouseover="currentSlide(1)"  alt="Delivering operational requirements through customized digital services.">
+                      <p>Digital Transformation</p>
+                        
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/managed-Services624.png" style="width:100%" onmouseover="currentSlide(2)" alt="24/7 IT support and monitoring for disaster recovery and performance optimization.">
+                        <p>Managed Services</p>
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/web-Content-Management-624px-1.png" style="width:100%" onmouseover="currentSlide(3)" alt="Manage your web content and digital assets with our comprehensive CMS solutions.">
+                        <p>Web Content Management</p>
+                    </div> 
+                    <div class="column">
+                        <img class="demo cursor" src="images/web-App624.png" style="width:100%" onmouseover="currentSlide(4)" alt="Next-generation, cross-channel progressive web applications to help you meet evolving customer needs.">
+                        <p>Web Appication Development</p>
+                    </div> 
+                    <div class="column">
+                        <img class="demo cursor" src="images/security-Services624.png" style="width:100%" onmouseover="currentSlide(5)" alt="Securing AEM-driven sites for decades with personalized protection.">
+                        <p>Security Services</p>
+                    </div> 
+                    <div class="column">
+                        <img class="demo cursor" src="images/ecommerce624.png" style="width:100%" onmouseover="currentSlide(6)" alt="Online commerce solutions that enhance customer experience and improve brand value while reducing operational costs.">
+                        <p>Ecommerce Implementationt</p>
+                    </div>  
+                </div>    
+            </div>
+        </div>
+        <div class="section-4" id='clients'>
+            <h1 class="content-heading"><strong>Trusted By</strong></h1>
+            <div class='portfolio-clients'>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Coke.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Intel.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Nike.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Citizen-Logo.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Lowes.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Autodesk.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/ID-Ameritrade.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/TV-Guide-1.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Canon.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/ACS-Logo.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/thermofisher.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/State-of-Oregon.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Petco.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/State-of-New-York.png" alt="">
+                </div>
+                <div class='clients-image'>
+                    <img class="image-container" src="images/TrustedBy/Inkriti.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section-5">
+            <h1 class="content-heading"><strong>Your Go-To Digital Solution Partner</strong></h1>
+            
+            <div class="slider-container">
+                <div class="content">
+                    <div class="slide">
+                        <img class="slider-image" src="images/DigitalSolution/rectangle-553.png" alt="" id = "lastimage">
+                        <div class="content-container">
+                            <h4 class="content-heading"><strong>Hungry For Results</strong></h4>
+                            <p>Our projects are powered by passionate individuals with the aim to help our clients grow.</p>
+                        </div> 
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/DigitalSolution/rectangle-55311.png" alt="">
+                        <div class="content-container">
+                            <h4 class="content-heading"><strong>Imagine, Then Execute </strong></h4>
+                            <p>Each project is another opportunity to apply our expertise to create something better.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/DigitalSolution/Hammer-Wall.png" alt="">
+                        <div class="content-container">
+                            <h4 class="content-heading"><strong>Break Down Walls</strong></h4>
+                            <p>We push ourselves and the boundaries of our creativity in the hunt for better possibilities.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/DigitalSolution/rounded-rectangle.png" alt="">
+                        <div class="content-container">
+                            <h4 class="content-heading"><strong>Test, Test and Test</strong></h4>
+                            <p>We want to be known by the impactful solutions that we create for our clients.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/DigitalSolution/vector-smart.png" alt="">
+                        <div class="content-container">
+                            <h4 class="content-heading"><strong>Lean and Mean</strong></h4>
+                            <p>Deploying only the best and what’s necessary to deliver quick and effective results.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/DigitalSolution/rectangle-553.png" alt="">
+                        <div class="content-container">
+                            <h4 class="content-heading"><strong>Hungry For Results</strong></h4>
+                            <p>Our projects are powered by passionate individuals with the aim to help our clients grow.</p>
+                        </div> 
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/DigitalSolution/rectangle-55311.png" alt="" id = "firstimage">
+                        <div class="content-container">
+                            <h4 class="content-heading"><strong>Imagine, Then Execute </strong></h4>
+                            <p>Each project is another opportunity to apply our expertise to create something better.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+              </div>
+            <div class="consultation-card">
+                <p> Read something that connected with you? Let’s work together to find that solution you’ve been looking for.</p>
+                <br>
+                <a href="#" class='button'>REQUEST CONSULTATION</a>
+            </div>
+        </div>
+        <div class="section-6" id='blogs'>
+            <h1 class="content-heading"><strong>Blogs</strong></h1>
+            <h3 class="content-heading"><strong>The latest information, stories and innovation from the digital world. Learn how they can impact your business.</strong></h3>
+            <div class="slider-container">
+                <div class="content">
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/boy-and-tender-coconut-seller-smiling.jpg" alt="" id = "lastimage1">
+                        <div class="content-container">
+                            <a ><strong>Hungry For Results</strong></a>
+                            
+                        </div> 
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/cardimg1.png" alt="">
+                        <div class="content-container">
+                            <a ><strong>Imagine, Then Execute </strong></a>
+                            
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/hero-img-article-2.png" alt="">
+                        <div class="content-container">
+                            <a ><strong>Break Down Walls</strong></a>
+                            
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/Optimized-card-image-test.jpg" alt="">
+                        <div class="content-container">
+                            <a ><strong>Test, Test and Test</strong></a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/people-looking-at-laptop-computer-1595391.jpg" alt="">
+                        <div class="content-container">
+                            <a ><strong>Lean and Mean</strong></a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/time-lapse-photography-3119955-1.jpg" alt="">
+                        <div class="content-container">
+                            <a ><strong>Hungry For Results</strong></a>
+                        </div> 
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/boy-and-tender-coconut-seller-smiling.jpg" alt="">
+                        <div class="content-container">
+                            <a ><strong>Hungry For Results</strong></a>
+                        </div> 
+                    </div>
+                    <div class="slide">
+                        <img class="slider-image" src="images/blogs/cardimg1.png" alt="" id='firstimage1'>
+                        <div class="content-container">
+                            <a ><strong>Imagine, Then Execute </strong></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+              </div>
+            <br>
+            <h1 class="content-heading"><strong>Argil DX Partners</strong></h1>
+            <div class="portfolio-clients">
+                <div class="clients-image"><a href="#"><img class="image-container" src='images/partners/Adobe_Solution_Partner_badge_Silver-AEM-Specialized-300x100-transparent.png'></a></div>
+                <div class="clients-image"><a href="#"><img class="image-container" src='images/partners/Magento-Business-Solution-Partner-Badge.png'></a></div>
+                <div class="clients-image"><a href="#"><img class="image-container" src='images/partners/image-1-1.png'></a></div>
+                <div class="clients-image"><a href="#"><img class="image-container" src='images/partners/APN-logo_dark-background-1.jpg'></a></div>
+            </div>
+        </div>
+    
+        <div class="section-7 container-fluid">
+
+            <h1 class="content-heading"><strong>Register</strong></h1>
+           <form class="msform needs-validation" novalidate>
+               <fieldset>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid First Name.
+                          </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Last Name.
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phno" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phno">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid 10 digit phone number.
+                        </div>
+                    </div>
+                    
+                </fieldset>
+                <fieldset>
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">User Name</label>
+                        <input type="text" class="form-control" id="userName">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid user name.
+                        </div>  
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid password.
+                          </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title text-center">Success !</h2> <br><br>
+                        <div class="row justify-content-center">
+                            <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                        </div> <br><br>
+                        <div class="row justify-content-center">
+                            <div class="col-7 text-center">
+                                <h5>You Have Successfully Registered</h5>
+                            </div>
+                        </div>
+                </fieldset>
+                <div class="mb-3">
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next Step" />
+                </div>
+            </form>
+            
+        </div>
+    </div>    
+    </section>    
+    <footer id ='contact'>
+       <div class="footer-top">
+        <button class="accordion">US HEADQUATERS</button>
+        <div class="panel">
+            <div class="footer_email_phone">
+                <span>+1 (888) 554-0502</span>
+                <br>
+                <a href="mailto:info@argildx.com">
+                    info@argildx.com
+                </a>
+            </div>
+            <div class="footer_address">
+                <strong>Argil DX LLC</strong>
+                <br>
+                3773 Howard Hughes Parkway
+                <br>
+                Suite 500 South
+                <br>
+                Las Vegas, NV 89169
+            </div>
+            <div class="footer_address">
+                <strong>Beaverton Office</strong>
+                <br>
+                4900 SW Griffith Dr
+                <br>
+                Suite 205
+                <br>
+                Beaverton, OR 97005
+            </div>
+        </div>
+        <button class="accordion">APAC HEADQUATERS</button>
+        <div class="panel">
+            <div class="footer_email_phone">
+                <span>+91 (981) 154 3009</span>
+                <br>
+                <a href="mailto:info-apac@argildx.com">
+                    info-apac@argildx.com
+                </a>
+            </div>
+            <div>
+                <div class="footer_address">
+                    <strong>ArgilDX Consulting Pvt. Ltd.</strong>
+                    <br>
+                    1st Floor, Riana Towers,
+                    <br>
+                    Plot No. 111, Sector 136
+                    <br>
+                    Noida, Uttar Pradesh 201304
+                </div>
+                <div class="footer_address">
+                    <strong>Bengaluru Office</strong>
+                    <br>
+                    1st Floor, Citadel Plaza,
+                    <br>
+                    12th Main, HAL 2nd Stage, Indiranagar,
+                    <br>
+                    Double Road, Near ESI Hospital,
+                    <br>
+                    Bengaluru, Karnataka 560038
+                </div>
+            </div>
+        </div>
+        
+       </div>
+       
+       <div class="footer-center" >
+        <hr>
+        <div class="middle-footer">
+            <a href="#" class="logo_link">
+                <img id = 'logo-pic' src="images/cmmi-image.png" alt="">
+            </a>
+            <a href="#" class="logo_link">
+                <img id = 'logo-pic' src="images/iso-image.png" alt="">
+            </a>
+            <a href="#" class="logo_link">
+                <img id = 'logo-pic' src="images/iso-image2.png" alt="">
+            </a>
+        </div>
+        <hr>
+       </div> 
+       <div class="footer-bottom">
+            <a class="social-button"><strong>&nbspf&nbsp</strong></a>
+            <a class="social-button"><strong>in</strong></a>
+            <p>© 2021 Argil DX. All Rights Reserved.</p>
+            <h3>Privacy Policy</h3>
+       </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/automaticSlider.js"></script>
+    <script src="js/mobileMenu.js"></script>
+    <script src="js/msForm.js"></script>
+
+</body>
+</html>

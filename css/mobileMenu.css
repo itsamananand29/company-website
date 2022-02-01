@@ -1,0 +1,44 @@
+#backdrop{
+    z-index: 249; 
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    right: 0;
+    background-color: #0000014d;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    background-color:#131336;
+    transition: 0.6s;
+    position: absolute;
+    /* border: 2px solid yellow; */
+    z-index: 399;
+    top:0;
+    right:  0;
+    bottom: 0;
+    font-display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+  }
+  .sidenav a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: white;
+
+  }
+  .sidenav a:hover{
+      color: yellow;
+  }
+  .sidenav .closebtn{
+    position: absolute;
+    top:-10px;
+    right: 1px;
+    font-size: 45px;
+    font-weight: 50;
+    color: red;
+  }
